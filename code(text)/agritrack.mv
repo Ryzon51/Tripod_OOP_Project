@@ -1,0 +1,231 @@
+H:2,block:8,blockSize:1000,chunk:fb0,clean:1,created:19b244aaaff,format:3,version:fb0,fletcher:523d4030
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        H:2,block:8,blockSize:1000,chunk:fb0,clean:1,created:19b244aaaff,format:3,version:fb0,fletcher:523d4030
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        chunk:faa,len:1,pages:2,max:600,map:35e,root:3ea800000e852,time:451d9e05,version:faa,next:5,toc:65a                                                                         
+   
+    map.12d map.12f map.130map.2map.3 map.35d map.35emap.5map.6map.7map.8map.9name._
+name.index.16name.lobData
+name.lobMap
+name.lobRefname.openTransactionsname.table.0
+name.table.13name.table.3name.tempLobMapname.undoLog.1name.undoLog.29name:table.13,createVersion:521,key:8fa25204,val:811c08408name:table.3,createVersion:521,key:8fa25204,val:32b6e5339name:index.16,createVersion:521,key:8b8ae25d,val:8204a6dfname:_name:openTransactions name:undoLog.1,createVersion:fa6 name:undoLog.2,createVersion:fa6&name:table.0,key:8fa25204,val:5803b3f1%name:lobMap,key:8fa25204,val:f4470498)name:tempLobMap,key:8fa25204,val:59a6a071%name:lobRef,key:eabe0274,val:3c756e4d&name:lobData,key:8fa25204,val:59a6a07121309683512d12f735d35e     
+ 	chunk.fa7	chunk.fa8	chunk.fa9 meta.idroot.1root.12droot.12froot.130root.2root.5 chunk:fa7,block:2,len:1,pages:2,livePages:0,max:600,liveMax:0,map:35e,next:3,root:3e9c00000e852,time:451d9df0,unused:451d9e05,unusedAtVersion:fa9,version:fa7,toc:5a3,occupancy:03 chunk:fa8,block:3,len:2,pages:6,livePages:5,max:1880,liveMax:1580,map:35e,root:3ea0000053552,time:451d9dfe,unusedAtVersion:fa8,version:fa8,toc:16d6,occupancy:20 chunk:fa9,block:8,len:1,pages:1,livePages:0,max:300,liveMax:0,map:35e,root:3ea4000002b52,time:451d9e00,unused:451d9e05,unusedAtVersion:fa9,version:fa9,toc:35a,occupancy:011
+3ea8000002b52
+3ea00000408d2
+3ea000004af10
+3ea0000051bc8
+3ea0000002b58
+3ea0000021458   @  +R       RalueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory	          ,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType2org.h2.mvstore.db.LobStorageMap$BlobReference$Type-org.h2.mvstore.db.LobStorageMap$BlobMeta$Type,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType     + 
+ ! &XSET CREATE_BUILD 240" "
+2CREATE USER IF NOT EXISTS "" SALT '' HASH '' ADMIN#  
+ CREATE CACHED TABLE "PUBLIC"."USER"(
+    "USER_ID" INTEGER GENERATED BY DEFAULT AS IDENTITY SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_77ADB09E_B633_4926_BCD7_AB45E2863617" NOT NULL,
+    "USERNAME" CHARACTER VARYING(100) NOT NULL,
+    "PASSWORD" CHARACTER VARYING(255) NOT NULL,
+    "NAME" CHARACTER VARYING(255),
+    "ROLE" CHARACTER VARYING(50) NOT NULL,
+    "LOCATION" CHARACTER VARYING(500)
+)$ #
+ CREATE SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_378C9643_E617_4E93_BF8B_2C43AF10CC36" AS INTEGER START WITH 1 RESTART WITH 13 BELONGS_TO_TABLE% !
+JCREATE PRIMARY KEY "PUBLIC"."PRIMARY_KEY_27" ON "PUBLIC"."USER"("USER_ID")& %
+yALTER TABLE "PUBLIC"."USER" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_2" PRIMARY KEY("USER_ID") INDEX "PUBLIC"."PRIMARY_KEY_27"( #
+ CREATE SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_77ADB09E_B633_4926_BCD7_AB45E2863617" AS INTEGER START WITH 1 RESTART WITH 14 BELONGS_TO_TABLE-  
+ CREATE CACHED TABLE "PUBLIC"."INVENTORY_ITEM"(
+    "ITEM_ID" INTEGER GENERATED BY DEFAULT AS IDENTITY SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_378C9643_E617_4E93_BF8B_2C43AF10CC36" NOT NULL,
+    "NAME" CHARACTER VARYING(255) NOT NULL,
+    "QUANTITY" DOUBLE PRECISION NOT NULL,
+    "UNIT" CHARACTER VARYING(50) NOT NULL,
+    "ITEM_TYPE" CHARACTER VARYING(50) NOT NULL,
+    "DATE_ADDED" CHARACTER VARYING(50) NOT NULL,
+    "STATUS" CHARACTER VARYING(50),
+    "NOTES" CHARACTER VARYING(1000),
+    "PRICE_PER_UNIT" DOUBLE PRECISION
+). !
+SCREATE PRIMARY KEY "PUBLIC"."PRIMARY_KEY_6" ON "PUBLIC"."INVENTORY_ITEM"("ITEM_ID")/ %
+ ALTER TABLE "PUBLIC"."INVENTORY_ITEM" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_7" PRIMARY KEY("ITEM_ID") INDEX "PUBLIC"."PRIMARY_KEY_6" !
+nCREATE UNIQUE NULLS DISTINCT INDEX "PUBLIC"."CONSTRAINT_27_INDEX_2" ON "PUBLIC"."USER"("USERNAMchunk:faa,len:1,version:faa,fletcher:59659f4f                                                                                  
+chunk:fac,len:2,pages:6,max:1880,map:35e,root:3eb0000053552,time:451d9e0c,version:fac,next:3,toc:1786                                                                       
+       1a3869f423fe1d7132b6e5333c756e4d401e7803573f2bb15803b3f159a6a07160438a686093dd956ad869dc73846619811c08408204a6df8b8a6dfe8b8ae25d8fa252049525f56d a38d7a3a6bfeb77b5780706b5a850fbc6a36c75cf03e49adf035acdeabe0274f4470498f6c5901f#org.h2.mvstore.db.NullValueDataType#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory         #org.h2.mvstore.db.NullValueDataType#org.h2.mvstore.db.NullValueDataType#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory      %org.h2.mvstore.type.ByteArrayDataType#org.h2.mvstore.db.NullValueDataType#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory       #org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory	
+           ,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType%org.h2.mvstore.db.RowDataType$Factory%org.h2.mvstore.db.RowDataType$Factory org.h2.mvstore.type.LongDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory	          ,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType2org.h2.mvstore.db.LobStorageMap$BlobReference$Type-org.h2.mvstore.db.LobStorageMap$BlobMeta$Type,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType     / 
+ ! &XSET CREATE_BUILD 240" "
+2CREATE USER IF NOT EXISTS "" SALT '' HASH '' ADMIN#  
+ CREATE CACHED TABLE "PUBLIC"."USER"(
+    "USER_ID" INTEGER GENERATED BY DEFAULT AS IDENTITY SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_77ADB09E_B633_4926_BCD7_AB45E2863617" NOT NULL,
+    "USERNAME" CHARACTER VARYING(100) NOT NULL,
+    "PASSWORD" CHARACTER VARYING(255) NOT NULL,
+    "NAME" CHARACTER VARYING(255),
+    "ROLE" CHARACTER VARYING(50) NOT NULL,
+    "LOCATION" CHARACTER VARYING(500)
+)$ #
+ CREATE SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_378C9643_E617_4E93_BF8B_2C43AF10CC36" AS INTEGER START WITH 1 RESTART WITH 13 BELONGS_TO_TABLE% !
+JCREATE PRIMARY KEY "PUBLIC"."PRIMARY_KEY_27" ON "PUBLIC"."USER"("USER_ID")& %
+yALTER TABLE "PUBLIC"."USER" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_2" PRIMARY KEY("USER_ID") INDEX "PUBLIC"."PRIMARY_KEY_27"( #
+ CREATE SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_77ADB09E_B633_4926_BCD7_AB45E2863617" AS INTEGER START WITH 1 RESTART WITH 14 BELONGS_TO_TABLE-  
+ CREATE CACHED TABLE "PUBLIC"."INVENTORY_ITEM"(
+    "ITEM_ID" INTEGER GENERATED BY DEFAULT AS IDENTITY SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_378C9643_E617_4E93_BF8B_2C43AF10CC36" NOT NULL,
+    "NAME" CHARACTER VARYING(255) NOT NULL,
+    "QUANTITY" DOUBLE PRECISION NOT NULL,
+    "UNIT" CHARACTER VARYING(50) NOT NULL,
+    "ITEM_TYPE" CHARACTER VARYING(50) NOT NULL,
+    "DATE_ADDED" CHARACTER VARYING(50) NOT NULL,
+    "STATUS" CHARACTER VARYING(50),
+    "NOTES" CHARACTER VARYING(1000),
+    "PRICE_PER_UNIT" DOUBLE PRECISION
+). !
+SCREATE PRIMARY KEY "PUBLIC"."PRIMARY_KEY_6" ON "PUBLIC"."INVENTORY_ITEM"("ITEM_ID")/ %
+ ALTER TABLE "PUBLIC"."INVENTORY_ITEM" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_7" PRIMARY KEY("ITEM_ID") INDEX "PUBLIC"."PRIMARY_KEY_6" !
+nCREATE UNIQUE NULLS DISTINCT INDEX "PUBLIC"."CONSTRAINT_27_INDEX_2" ON "PUBLIC"."USER"("USERNAME" NULLS FIRST) %
+ ALTER TABLE "PUBLIC"."USER" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_27" UNIQUE NULLS DISTINCT ("USERNAME") INDEX "PUBLIC"."CONSTRAINT_27_INDEX_2"     	
+
+ !HRice   HbagsKHARVESTN2025-12-16LSold Out
+/Kung naay mo kuha ani available rani permi diri "JBanana  PHtonsKHARVESTN2025-12-16NInterestedYkuhaa nani ninyo diri #KCoconut  HHtonsKHARVESTN2025-12-16JStoredYIf you are interested $HMais   HbagsKHARVESTN2025-12-16LSold OutQpa unhanay ra )JSaging   FkgKHARVESTN2025-12-24MAvailableRsabot sabot ra   *Imanok   JpiecesKHARVESTN2025-12-24MAvailableTsabot sabot lang   +GUbe   
+FkgKHARVESTN2025-12-29MAvailable
+DIf you are interested just buy it or call me in my number 0909090090  X,GUbe   
+FkgKHARVESTN2025-12-29MAvailable
+DIf you are interested just buy it or call me in my number 0909090090  X     
+  	
+
+
+ !IadminLadmin123NAdmin UserIADMIN "JsellerMseller123[Juan Dela Cruz (Farmer)JSELLER #KcompanyNcompany123SAgriTrack Corp.KCOMPANY $HMarkJ123456NMark WellyJSELLER %IWellyI12345IWellyIBUYER &IChabyI12345RChaby LabasanoJSELLER 'HVickI12345JRovickIBUYER (KMcWellyI12345JMcWellJSELLER )HEricI12345KEricsonIBUYER *HDaveI12345IGwapoIBUYER +HKirtI12345HKirtJSELLER ,IwellyI12345IwellyIBUYER -HbabyI12345KMY BABYJSELLER    f  
+ IChaby
+HDave	HEric
+HKirtHMarkKMcWelly HVickIWellyIadmin
+HbabyKcompanyJsellerIwelly      
+ 	chunk.fa8	chunk.faa	chunk.fab meta.idroot.1root.12droot.12froot.130root.2root.5 chunk:fa8,block:8,len:2,pages:6,livePages:0,max:1880,liveMax:0,map:35e,root:3ea0000053552,time:451d9dfe,unused:451d9e0c,unusedAtVersion:fab,version:fa8,toc:16d6,occupancy:3f chunk:faa,block:2,len:1,pages:2,livePages:1,max:600,liveMax:300,map:35e,root:3ea800000e852,time:451d9e05,unusedAtVersion:faa,version:faa,toc:65a,occupancy:02 chunk:fab,block:a,len:1,pages:1,livePages:0,max:400,liveMax:0,map:35e,root:3eac000002b54,time:451d9e07,unused:451d9e0c,unusedAtVersion:fab,version:fab,toc:40f,occupancy:011
+3ea8000002b52
+3eb00000408d2
+3eb000004af10
+3eb0000051bc8
+3eb0000002b58
+3eb0000021458      +X  @ X  K@    K     L        5R                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          chunk:fac,len:2,version:fac,fletcher:7665a44f                                                                                  
+chunk:fae,len:1,pages:1,max:600,map:35e,root:3eb8000002b56,time:451d9e10,version:fae,next:a,toc:4c1                                                                         
+  
+   	chunk.fa8	chunk.faa	chunk.fab	chunk.fac	chunk.fad meta.idroot.1root.12droot.12froot.130root.2root.5 chunk:fa8,block:3,len:2,pages:6,livePages:0,max:1880,liveMax:0,map:35e,root:3ea0000053552,time:451d9dfe,unused:451d9e0c,unusedAtVersion:fab,version:fa8,toc:16d6,occupancy:3f chunk:faa,block:2,len:1,pages:2,livePages:1,max:600,liveMax:300,map:35e,root:3ea800000e852,time:451d9e05,unusedAtVersion:faa,version:faa,toc:65a,occupancy:02 chunk:fab,block:5,len:1,pages:1,livePages:0,max:400,liveMax:0,map:35e,root:3eac000002b54,time:451d9e07,unused:451d9e0c,unusedAtVersion:fab,version:fab,toc:40f,occupancy:01 chunk:fac,block:6,len:2,pages:6,livePages:5,max:1880,liveMax:1580,map:35e,root:3eb0000053552,time:451d9e0c,unusedAtVersion:fac,version:fac,toc:1786,occupancy:20 chunk:fad,block:8,len:1,pages:1,livePages:0,max:400,liveMax:0,map:35e,root:3eb4000002b54,time:451d9e0e,unused:451d9e10,unusedAtVersion:fad,version:fad,toc:40a,occupancy:011
+3ea8000002b52
+3eb00000408d2
+3eb000004af10
+3eb0000051bc8
+3eb0000002b58
+3eb0000021458      +Vore.db.RowDataType$Factory%org.h2.mvstore.db.RowDataType$Factory org.h2.mvstore.type.LongDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory	          ,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType2org.h2.mvstore.db.LobStorageMap$BlobReference$Type-org.h2.mvstore.db.LobStorageMap$BlobMeta$Type,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType     / 
+ ! &XSET CREATE_BUILD 240" "
+2CREATE USER IF NOT EXISTS "" SALT '' HASH '' ADMIN#  
+ CREATE CACHED TABLE "PUBLIC"."USER"(
+    "USER_ID" INTEGER GENERATED BY DEFAULT AS IDENTITY SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_77ADB09E_B633_4926_BCD7_AB45E2863617" NOT NULL,
+    "USERNAME" CHARACTER VARYING(100) NOT NULL,
+    "PASSWORD" CHARACTER VARYING(255) NOT NULL,
+    "NAME" CHARACTER VARYING(255),
+    "ROLE" CHARACTER VARYING(50) NOT NULL,
+    "LOCATION" CHARACTER VARYING(500)
+)$ #
+ CREATE SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_378C9643_E617_4E93_BF8B_2C43AF10CC36" AS INTEGER START WITH 1 RESTART WITH 13 BELONGS_TO_TABLE% !
+JCREATE PRIMARY KEY "PUBLIC"."PRIMARY_KEY_27" ON "PUBLIC"."USER"("USER_ID")& %
+yALTER TABLE "PUBLIC"."USER" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_2" PRIMARY KEY("USER_ID") INDEX "PUBLIC"."PRIMARY_KEY_27"( #
+ CREATE SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_77ADB09E_B633_4926_BCD7_AB45E2863617" AS INTEGER START WITH 1 RESTART WITH 14 BELONGS_TO_TABLE-  
+ CREATE CACHED TABLE "PUBLIC"."INVENTORY_ITEM"(
+    "ITEM_ID" INTEGER GENERATED BY DEFAULT AS IDENTITY SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_378C9643_E617_4E93_BF8B_2C43AF10CC36" NOT NULL,
+    "NAME" CHARACTER VARYING(255) NOT NULL,
+    "QUANTITY" DOUBLE PRECISION NOT NULL,
+    "UNIT" CHARACTER VARYING(50) NOT NULL,
+    "ITEM_TYPE" CHARACTER VARYING(50) NOT NULL,
+    "DATE_ADDED" CHARACTER VARYING(50) NOT NULL,
+    "STATUS" CHARACTER VARYING(50),
+    "NOTES" CHARACTER VARYING(1000),
+    "PRICE_PER_UNIT" DOUBLE PRECISION
+). !
+SCREATE PRIMARY KEY "PUBLIC"."PRIMARY_KEY_6" ON "PUBLIC"."INVENTORY_ITEM"("ITEM_ID")/ %
+ ALTER TABLE "PUBLIC"."INVENTORY_ITEM" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_7" PRIMARY KEY("ITEM_ID") INDEX "PUBLIC"."PRIMARY_KEY_6" !
+nCREATE UNIQUE NULLS DISTINCT INDEX "PUBLIC"."CONSTRAINT_27_INDEX_2" ON "PUBLIC"."USER"("USERNAMchunk:fae,len:1,version:fae,fletcher:8565a74f                                                                                  
+chunk:faf,len:2,pages:7,max:1b80,map:35e,root:3ebc00005f252,time:451d9e15,version:faf,next:6,toc:1a88                                                                       
+       1a3869f423fe1d7132b6e5333c756e4d401e7803573f2bb15803b3f159a6a07160438a686093dd956ad869dc73846619811c08408204a6df8b8a6dfe8b8ae25d8fa252049525f56d a38d7a3a6bfeb77b5780706b5a850fbc6a36c75cf03e49adf035acdeabe0274f4470498f6c5901f#org.h2.mvstore.db.NullValueDataType#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory         #org.h2.mvstore.db.NullValueDataType#org.h2.mvstore.db.NullValueDataType#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory      %org.h2.mvstore.type.ByteArrayDataType#org.h2.mvstore.db.NullValueDataType#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory       #org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory	
+           ,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType%org.h2.mvstore.db.RowDataType$Factory%org.h2.mvstore.db.RowDataType$Factory org.h2.mvstore.type.LongDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory	          ,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType2org.h2.mvstore.db.LobStorageMap$BlobReference$Type-org.h2.mvstore.db.LobStorageMap$BlobMeta$Type,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType     , 
+ ! &XSET CREATE_BUILD 240" "
+2CREATE USER IF NOT EXISTS "" SALT '' HASH '' ADMIN#  
+ CREATE CACHED TABLE "PUBLIC"."USER"(
+    "USER_ID" INTEGER GENERATED BY DEFAULT AS IDENTITY SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_77ADB09E_B633_4926_BCD7_AB45E2863617" NOT NULL,
+    "USERNAME" CHARACTER VARYING(100) NOT NULL,
+    "PASSWORD" CHARACTER VARYING(255) NOT NULL,
+    "NAME" CHARACTER VARYING(255),
+    "ROLE" CHARACTER VARYING(50) NOT NULL,
+    "LOCATION" CHARACTER VARYING(500)
+)$ #
+ CREATE SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_378C9643_E617_4E93_BF8B_2C43AF10CC36" AS INTEGER START WITH 1 RESTART WITH 13 BELONGS_TO_TABLE% !
+JCREATE PRIMARY KEY "PUBLIC"."PRIMARY_KEY_27" ON "PUBLIC"."USER"("USER_ID")& %
+yALTER TABLE "PUBLIC"."USER" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_2" PRIMARY KEY("USER_ID") INDEX "PUBLIC"."PRIMARY_KEY_27"( #
+ CREATE SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_77ADB09E_B633_4926_BCD7_AB45E2863617" AS INTEGER START WITH 1 RESTART WITH 14 BELONGS_TO_TABLE-  
+ CREATE CACHED TABLE "PUBLIC"."INVENTORY_ITEM"(
+    "ITEM_ID" INTEGER GENERATED BY DEFAULT AS IDENTITY SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_378C9643_E617_4E93_BF8B_2C43AF10CC36" NOT NULL,
+    "NAME" CHARACTER VARYING(255) NOT NULL,
+    "QUANTITY" DOUBLE PRECISION NOT NULL,
+    "UNIT" CHARACTER VARYING(50) NOT NULL,
+    "ITEM_TYPE" CHARACTER VARYING(50) NOT NULL,
+    "DATE_ADDED" CHARACTER VARYING(50) NOT NULL,
+    "STATUS" CHARACTER VARYING(50),
+    "NOTES" CHARACTER VARYING(1000),
+    "PRICE_PER_UNIT" DOUBLE PRECISION
+). !
+SCREATE PRIMARY KEY "PUBLIC"."PRIMARY_KEY_6" ON "PUBLIC"."INVENTORY_ITEM"("ITEM_ID")/ %
+ ALTER TABLE "PUBLIC"."INVENTORY_ITEM" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_7" PRIMARY KEY("ITEM_ID") INDEX "PUBLIC"."PRIMARY_KEY_6" !
+nCREATE UNIQUE NULLS DISTINCT INDEX "PUBLIC"."CONSTRAINT_27_INDEX_2" ON "PUBLIC"."USER"("USERNAME" NULLS FIRST) %
+ ALTER TABLE "PUBLIC"."USER" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_27" UNIQUE NULLS DISTINCT ("USERNAME") INDEX "PUBLIC"."CONSTRAINT_27_INDEX_2"     	
+
+ !HRice   HbagsKHARVESTN2025-12-16LSold Out
+/Kung naay mo kuha ani available rani permi diri "JBanana  PHtonsKHARVESTN2025-12-16NInterestedYkuhaa nani ninyo diri #KCoconut  HHtonsKHARVESTN2025-12-16JStoredYIf you are interested $HMais   HbagsKHARVESTN2025-12-16LSold OutQpa unhanay ra )JSaging   FkgKHARVESTN2025-12-24MAvailableRsabot sabot ra   *Imanok   JpiecesKHARVESTN2025-12-24MAvailableTsabot sabot lang   +GUbe   
+FkgKHARVESTN2025-12-29MAvailable
+DIf you are interested just buy it or call me in my number 0909090090  X,GUbe   
+FkgKHARVESTN2025-12-29MAvailable
+DIf you are interested just buy it or call me in my number 0909090090  X     
+  	
+
+
+ !IadminLadmin123NAdmin UserIADMIN "JsellerMseller123[Juan Dela Cruz (Farmer)JSELLER #KcompanyNcompany123SAgriTrack Corp.KCOMPANY $HMarkJ123456NMark WellyJSELLER %IWellyI12345IWellyIBUYER &IChabyI12345RChaby LabasanoJSELLER 'HVickI12345JRovickIBUYER (KMcWellyI12345JMcWellJSELLER )HEricI12345KEricsonIBUYER *HDaveI12345IGwapoIBUYER +HKirtI12345HKirtJSELLER ,IwellyI12345IwellyIBUYER -HbabyI12345KMY BABYJSELLER    f  
+ IChaby
+HDave	HEric
+HKirtHMarkKMcWelly HVickIWellyIadmin
+HbabyKcompanyJsellerIwelly       map.12d map.12f map.130map.2map.3 map.35d map.35emap.5map.6map.7map.8map.9name._
+name.index.16name.lobData
+name.lobMap
+name.lobRefname.openTransactionsname.table.0
+name.table.13name.table.3name.tempLobMapname.undoLog.1name.undoLog.29name:table.13,createVersion:521,key:8fa25204,val:811c08408name:table.3,createVersion:521,key:8fa25204,val:32b6e5339name:index.16,createVersion:521,key:8b8ae25d,val:8204a6dfname:_name:openTransactions name:undoLog.1,createVersion:fa6 name:undoLog.2,createVersion:fa6&name:table.0,key:8fa25204,val:5803b3f1%name:lobMap,key:8fa25204,val:f4470498)name:tempLobMap,key:8fa25204,val:59a6a071%name:lobRef,key:eabe0274,val:3c756e4d&name:lobData,key:8fa25204,val:59a6a07121309683512d12f735d35e     
+ 	chunk.faa	chunk.fac	chunk.fae meta.idroot.1root.12droot.12froot.130root.2root.5 chunk:faa,block:2,len:1,pages:2,livePages:0,max:600,liveMax:0,map:35e,root:3ea800000e852,time:451d9e05,unused:451d9e15,unusedAtVersion:fae,version:faa,toc:65a,occupancy:03 chunk:fac,block:3,len:2,pages:6,livePages:0,max:1880,liveMax:0,map:35e,root:3eb0000053552,time:451d9e0c,unused:451d9e15,unusedAtVersion:fae,version:fac,toc:1786,occupancy:3f chunk:fae,block:5,len:1,pages:1,livePages:0,max:600,liveMax:0,map:35e,root:3eb8000002b56,time:451d9e10,unused:451d9e15,unusedAtVersion:fae,version:fae,toc:4c1,occupancy:011
+3ebc000053552
+3ebc0000408d2
+3ebc00004af10
+3ebc000051bc8
+3ebc000002b58
+3ebc000021458      +X  @ X  K@    K     L      @ 5R      R                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                chunk:faf,len:2,version:faf,fletcher:9765aa4f                                                                                  
+chunk:fb0,len:1,pages:1,max:400,map:35e,root:3ec0000002b54,time:451d9e17,version:fb0,next:9,toc:418                                                                         
+  kv  
+ 	chunk.faa	chunk.fac	chunk.fae	chunk.faf meta.idroot.1root.12droot.12froot.130root.2root.5 chunk:faa,block:2,len:1,pages:2,livePages:0,max:600,liveMax:0,map:35e,root:3ea800000e852,time:451d9e05,unused:451d9e15,unusedAtVersion:fae,version:faa,toc:65a,occupancy:03 chunk:fac,block:3,len:2,pages:6,livePages:0,max:1880,liveMax:0,map:35e,root:3eb0000053552,time:451d9e0c,unused:451d9e15,unusedAtVersion:fae,version:fac,toc:1786,occupancy:3f chunk:fae,block:5,len:1,pages:1,livePages:0,max:600,liveMax:0,map:35e,root:3eb8000002b56,time:451d9e10,unused:451d9e15,unusedAtVersion:fae,version:fae,toc:4c1,occupancy:01 chunk:faf,block:6,len:2,pages:7,livePages:6,max:1b80,liveMax:1880,map:35e,root:3ebc00005f252,time:451d9e15,unusedAtVersion:faf,version:faf,toc:1a88,occupancy:401
+3ebc000053552
+3ebc0000408d2
+3ebc00004af10
+3ebc000051bc8
+3ebc000002b58
+3ebc000021458      +TersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory	
+           ,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType%org.h2.mvstore.db.RowDataType$Factory%org.h2.mvstore.db.RowDataType$Factory org.h2.mvstore.type.LongDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory%org.h2.mvstore.db.RowDataType$Factory	          ,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType2org.h2.mvstore.db.LobStorageMap$BlobReference$Type-org.h2.mvstore.db.LobStorageMap$BlobMeta$Type,org.h2.mvstore.tx.VersionedValueType$Factory#org.h2.mvstore.db.NullValueDataType     , 
+ ! &XSET CREATE_BUILD 240" "
+2CREATE USER IF NOT EXISTS "" SALT '' HASH '' ADMIN#  
+ CREATE CACHED TABLE "PUBLIC"."USER"(
+    "USER_ID" INTEGER GENERATED BY DEFAULT AS IDENTITY SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_77ADB09E_B633_4926_BCD7_AB45E2863617" NOT NULL,
+    "USERNAME" CHARACTER VARYING(100) NOT NULL,
+    "PASSWORD" CHARACTER VARYING(255) NOT NULL,
+    "NAME" CHARACTER VARYING(255),
+    "ROLE" CHARACTER VARYING(50) NOT NULL,
+    "LOCATION" CHARACTER VARYING(500)
+)$ #
+ CREATE SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_378C9643_E617_4E93_BF8B_2C43AF10CC36" AS INTEGER START WITH 1 RESTART WITH 13 BELONGS_TO_TABLE% !
+JCREATE PRIMARY KEY "PUBLIC"."PRIMARY_KEY_27" ON "PUBLIC"."USER"("USER_ID")& %
+yALTER TABLE "PUBLIC"."USER" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_2" PRIMARY KEY("USER_ID") INDEX "PUBLIC"."PRIMARY_KEY_27"( #
+ CREATE SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_77ADB09E_B633_4926_BCD7_AB45E2863617" AS INTEGER START WITH 1 RESTART WITH 14 BELONGS_TO_TABLE-  
+ CREATE CACHED TABLE "PUBLIC"."INVENTORY_ITEM"(
+    "ITEM_ID" INTEGER GENERATED BY DEFAULT AS IDENTITY SEQUENCE "PUBLIC"."SYSTEM_SEQUENCE_378C9643_E617_4E93_BF8B_2C43AF10CC36" NOT NULL,
+    "NAME" CHARACTER VARYING(255) NOT NULL,
+    "QUANTITY" DOUBLE PRECISION NOT NULL,
+    "UNIT" CHARACTER VARYING(50) NOT NULL,
+    "ITEM_TYPE" CHARACTER VARYING(50) NOT NULL,
+    "DATE_ADDED" CHARACTER VARYING(50) NOT NULL,
+    "STATUS" CHARACTER VARYING(50),
+    "NOTES" CHARACTER VARYING(1000),
+    "PRICE_PER_UNIT" DOUBLE PRECISION
+). !
+SCREATE PRIMARY KEY "PUBLIC"."PRIMARY_KEY_6" ON "PUBLIC"."INVENTORY_ITEM"("ITEM_ID")/ %
+ ALTER TABLE "PUBLIC"."INVENTORY_ITEM" ADD CONSTRAINT "PUBLIC"."CONSTRAINT_7" PRIMARY KEY("ITEM_ID") INDEX "PUBLIC"."PRIMARY_KEY_6" !
+nCREATE UNIQUE NULLS DISTINCT INDEX "PUBLIC"."CONSTRAINT_27_INDEX_2" ON "PUBLIC"."USER"("USERNAMchunk:fb0,len:1,version:fb0,fletcher:3e703d51                                                                                  
