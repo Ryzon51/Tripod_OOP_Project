@@ -1,0 +1,45 @@
+c:\JavaProjects\AgriTrack\
+├── src\                          ← ALL YOUR CODE IS HERE
+│   ├── main\
+│   │   └── AgriTrackApp.java    ← Main entry point (starts the application)
+│   │
+│   ├── gui\                      ← All GUI Windows and Dialogs
+│   │   ├── LoginFrame.java
+│   │   ├── MainMenuFrame.java
+│   │   ├── SellerMainFrame.java
+│   │   ├── BuyerMainFrame.java
+│   │   ├── AdminMainFrame.java
+│   │   ├── HarvestForm.java
+│   │   ├── RecordsWindow.java
+│   │   ├── PurchaseDialog.java
+│   │   ├── UserProfileDialog.java
+│   │   ├── RegistrationForm.java
+│   │   ├── ReportsWindow.java
+│   │   ├── DatabaseViewerDialog.java
+│   │   └── StatusCellRenderer.java
+│   │
+│   ├── model\                    ← Data Models (OOP Classes)
+│   │   ├── User.java
+│   │   ├── FarmItem.java
+│   │   ├── HarvestLot.java
+│   │   ├── EquipmentItem.java
+│   │   └── InventoryService.java
+│   │
+│   ├── dao\                      ← Database Access Objects
+│   │   ├── UserDAO.java
+│   │   └── InventoryDAO.java
+│   │
+│   └── util\                     ← Utility Classes
+│       ├── DBConnection.java
+│       ├── CSVExporter.java
+│       ├── FileImporter.java
+│       ├── ThemeColors.java
+│       └── IconUtil.java
+│
+├── lib\
+│   └── h2-2.4.240.jar           ← H2 Database library
+│
+├── images\
+│   └── agritrack_icon.png      ← Application logo
+│
+└── build\                       ← Compiled .class files (auto-generated)
