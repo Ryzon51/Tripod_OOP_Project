@@ -1,0 +1,73 @@
+package dao;
+
+import java.sql.*;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import model.*;
+import util.DBConnection;
+
+public class InventoryDAO implements InventoryService {
+    @Override
+    public void addRecord(FarmItem item) throws SQLException {
+        String sql = "INSERT INTO INVENTORY (name, quantity, unit, date_added, notes, item_type, status_condition, price_per_unit) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, item.getName());
+            pstmt.setDouble(2, item.getQuantity());
+            pstmt.setString(3, item.getUnit());
+            pstmt.setDate(4, Date.valueOf(item.getDateAdded()));
+            pstmt.setString(5, item.getNotes());
+            if (item instanceof HarvestLot) {
+                pstmt.setString(6, "HARVEST"); // Set item type
+                pstmt.setString(7, ((HarvestLot)item).getStatus()); // Set status
+                pstmt.setObject(8, ((HarvestLot)item).getPricePerUnit()); // Set price
+            } else {
+                pstmt.setString(6, "EQUIPMENT");
+                pstmt.setString(7, ((EquipmentItem)item).getCondition());
+                pstmt.setNull(8, Types.DOUBLE);
+            }
+            pstmt.executeUpdate(); // Execute insert
+        }
+    }
+
+    @Override
+    public List<FarmItem> getAllRecords() throws SQLException {
+        List<FarmItem> items = new ArrayList<>();
+        String sql = "SELECT * FROM INVENTORY ORDER BY id DESC";
+        try (Connection conn = DBConnection.getConnection();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                items.add(createFarmItemFromResultSet(rs)); // Convert row to object
+            }
+        }
+        return items;
+    }
+
+    private FarmItem createFarmItemFromResultSet(ResultSet rs) throws SQLException {
+        int id = rs.getInt("id");
+        String name = rs.getString("name");
+        double qty = rs.getDouble("quantity");
+        String unit = rs.getString("unit");
+        LocalDate date = rs.getDate("date_added").toLocalDate();
+        String notes = rs.getString("notes");
+        String type = rs.getString("item_type");
+        String statusCond = rs.getString("status_condition");
+        if ("HARVEST".equals(type)) {
+            HarvestLot h = new HarvestLot(name, qty, unit, date, notes, statusCond, rs.getDouble("price_per_unit"));
+            h.setId(id); return h;
+        } else {
+            EquipmentItem e = new EquipmentItem(name, qty, unit, date, notes, statusCond);
+            e.setId(id); return e;
+        }
+    }
+
+    public void deleteRecord(int id) throws SQLException {
+        String sql = "DELETE FROM INVENTORY WHERE id = ?";
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, id); pstmt.executeUpdate(); // Delete record
+        }
+    }
+}

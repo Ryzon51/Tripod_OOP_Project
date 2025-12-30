@@ -1,0 +1,21 @@
+package model;
+import java.time.LocalDate;
+
+public abstract class FarmItem {
+    private int id;
+    private String name;
+    private double quantity;
+    private String unit;
+    private LocalDate dateAdded;
+    private String notes;
+
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+    public String getName() { return name; }
+    public double getQuantity() { return quantity; }
+    public String getUnit() { return unit; }
+    public LocalDate getDateAdded() { return dateAdded; }
+    public String getNotes() { return notes; }
+    public abstract String getItemType(); // Implemented by child
+    public abstract String toCSVString(); // For export
+}

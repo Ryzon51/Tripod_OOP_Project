@@ -1,0 +1,35 @@
+package dao;
+
+import java.sql.*;
+import model.User;
+import util.DBConnection;
+
+public class UserDAO {
+    public User login(String user, String pass) throws SQLException {
+        String sql = "SELECT * FROM \"USER\" WHERE username = ? AND password = ?";
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, user); pstmt.setString(2, pass);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                if (rs.next()) {
+                    User u = new User();
+                    u.setId(rs.getInt("user_id")); u.setName(rs.getString("name"));
+                    u.setRole(rs.getString("role")); return u; // Return user
+                }
+            }
+        }
+        return null; // Login failed
+    }
+
+    public void signUp(User user) throws SQLException {
+        String sql = "INSERT INTO \"USER\" (username, password, name, role) VALUES (?, ?, ?, ?)";
+        try (Connection conn = DBConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, user.getUsername());
+            pstmt.setString(2, user.getPassword());
+            pstmt.setString(3, user.getName());
+            pstmt.setString(4, user.getRole());
+            pstmt.executeUpdate(); // Create user
+        }
+    }
+}

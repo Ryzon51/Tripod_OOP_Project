@@ -1,0 +1,15 @@
+package util;
+import java.sql.*;
+
+public class DBConnection {
+    private static final String URL = "jdbc:h2:./agritrack;AUTO_SERVER=TRUE";
+    public static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(URL, "sa", ""); // Get DB link
+    }
+    static {
+        try (Connection c = getConnection(); Statement s = c.createStatement()) {
+            s.execute("CREATE TABLE IF NOT EXISTS INVENTORY (id INT AUTO_INCREMENT, name VARCHAR(255), item_type VARCHAR(50), status_condition VARCHAR(100), price_per_unit DOUBLE)");
+            s.execute("CREATE TABLE IF NOT EXISTS \"USER\" (user_id INT AUTO_INCREMENT, username VARCHAR(50), password VARCHAR(50), role VARCHAR(20))");
+        } catch (Exception e) { e.printStackTrace(); }
+    }
+}

@@ -1,0 +1,13 @@
+package util;
+import java.io.*;
+import java.util.List;
+import model.FarmItem;
+
+public class CSVExporter {
+    public static void exportToCSV(String path, List<FarmItem> items) throws IOException {
+        try (BufferedWriter w = new BufferedWriter(new FileWriter(path))) {
+            w.write("ID,Name,Qty,Status,Price\n"); // Header
+            for (FarmItem i : items) w.write(i.toCSVString() + "\n"); // Write row
+        }
+    }
+}
